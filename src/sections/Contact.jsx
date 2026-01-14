@@ -1,29 +1,8 @@
-import { myEmail, myPhone, myLocation, serviceId, templateId, publicKey } from "@/config/env"
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react"
+import { serviceId, templateId, publicKey } from "@/config/env"
+import { Send, CheckCircle, AlertCircle } from "lucide-react"
 import { Button } from "@/components/Button"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
-
-const contactInfo = [
-    {
-        icon: Mail,
-        label: "Email",
-        value: myEmail,
-        href: `mailto:${myEmail}`
-    },
-    {
-        icon: Phone,
-        label: "Phone",
-        value: myPhone,
-        href: `tel:${myPhone}`
-    },
-    {
-        icon: MapPin,
-        label: "Location",
-        value: myLocation,
-        href: "#"
-    }
-]
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
