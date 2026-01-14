@@ -13,6 +13,7 @@ const skills = [
     "PostgreSQL",
     "Git",
     "Docker",
+    "Kubernetes",
     "Leaflet",
     "Figma",
     "Trello"
