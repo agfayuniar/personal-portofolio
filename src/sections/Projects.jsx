@@ -4,7 +4,7 @@ const projects = [
     {
         title: "Dentist Website",
         description: "A professional web portfolio for a dentist, designed to build patient trust and showcase services, doctor profiles, and contact information with a clean, modern interface.",
-        image: "/projects/project1.png",
+        image: "",
         tags: ["React", "Tailwind", "Responsive Design", "SEO"],
         link: "#",
         github: "#"
@@ -14,6 +14,22 @@ const projects = [
         description: "A real-time vessel monitoring web application that visualizes live ship positions on an interactive map. Users can explore vessels, view detailed information directly on the map, and monitor movements efficiently through a clean, map-driven interface.",
         image: "/projects/project2.png",
         tags: ["React", "Node.js", "PostgreSQL", "Leaflet"],
+        link: "#",
+        github: "#"
+    },
+    {
+        title: "Domestic Trade Licensing System",
+        description: "An internal web application designed for government officers to process and manage domestic trade licensing requests. The system includes role-based access control, user management for both officers and business entities, and a built-in CMS to manage public-facing content for business users.",
+        image: "/projects/project3.png",
+        tags: ["React", "Primereact", "Axios", "Node.js", "PostgreSQL", "JWT Authentication", "Git", "Trello"],
+        link: "#",
+        github: "#"
+    },
+    {
+        title: "Business Licensing Portal",
+        description: "A public-facing web application for business entities to submit domestic trade licensing applications in the distribution and product quality standardization sectors. The platform integrates with multiple government systems to validate legal business identities and ensure compliance before operation.",
+        image: "/projects/project4.png",
+        tags: ["React", "Primereact", "Axios", "Node.js", "Express.js", "PostgreSQL", "JWT Authentication", "Git", "Docker", "Figma", "RESTful APIs", "Kubernetes" ],
         link: "#",
         github: "#"
     }
@@ -49,7 +65,7 @@ export const Projects = () => {
                             {/* Image */}
                             <div className="relative overflow-hidden aspect-video">
                                 <img
-                                    src={project.image}
+                                    src={project.image || '/projects/project-default.png'}
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-900 group-hover:scale-110"
                                 />
